@@ -86,7 +86,7 @@
     font-family:Verdana;
 }
 
-    .Intro {
+    h1.Intro {
     color: black;
     font-family:Verdana;
     -webkit-text-stroke-color: red;
@@ -94,6 +94,12 @@
     text-align:left;
     transition: color 0.3s ease; 
     cursor:default;
+}
+
+    h1.Intro:hover {
+    color:white;
+    font-family:Verdana;
+    text-decoration:none;
 }
 
     .MeImage0 {
@@ -117,7 +123,7 @@
         margin: 0 auto;
         box-shadow: 20px 10px 6px rgba(180, 1, 1, 0.548);
         transition: transform 0.3s ease;
-        right: 75px;
+        right: 60px;
         top: 240px;
         height: 434px;
         width:233px;
@@ -130,6 +136,10 @@
 
     p.TextSample {
         color: black;
+    }
+
+    p.TextSample:hover {
+        color:white;
     }
 
     .button1 {
@@ -269,26 +279,22 @@
         }
     </script>-->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var meImage0 = document.querySelector('.MeImage0');
-            var hlLink = document.querySelector('.Hl');
-            var Intro = document.querySelector('h1.Intro');
-            var TextSample = document.querySelector('p.TextSample');
-    
-            meImage0.addEventListener('mouseover', function () {
-                hlLink.style.color = 'white';
-                TextSample.style.color = 'white';
-                Intro.style.color = 'white';
-            });
-    
-            meImage0.addEventListener('mouseout', function () {
-                hlLink.style.color = 'black';
-                TextSample.style.color = 'black';
-                Intro.style.color = 'black';
-            });
-        });
+    document.addEventListener("DOMContentLoaded", function () {
+    var meImage0 = document.querySelector('.MeImage0');
+    var hlLink = document.querySelector('.Hl');
+    var Intro = document.querySelector('.Intro');
+    var TextSample = document.querySelector('.TextSample');
+
+    meImage0.addEventListener('mouseover', function () {
+        hlLink.style.color = 'white';
+    });
+
+    meImage0.addEventListener('mouseout', function () {
+        hlLink.style.color = 'black';
+    });
+});
+
     </script>
-    
     <script>
 var texts = ["C1VKX0", "CZV2XO", "CXVKXO"];
         var currentIndex = 0;
