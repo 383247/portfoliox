@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>czvkxo portfolio</title>
+    <link rel="icon" href="OIP (2) (3).png" type="image/x-icon">
+</head>
+<style>
+           ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+    .title {
+        font-size: 10mm;
+        text-align:center;
+        font-weight:60px;
+        font-family:Verdana;
+        letter-spacing:.5mm;
+        color: white;
+        height: 60px;
+        width: 350px;
+    }
+    .MainHeader {
+        background-color: transparent;
+        height: 60px;
+        width: 350px;
+        align-self: center;
+        margin: 0 auto;
+        padding: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .MainHeader:hover {
+        background: linear-gradient(to right, rgba(27, 27, 27, 0.5), rgba(0, 0, 0, 0.5));
+
+    }
+
+    h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-family:Verdana;
+    transition: color 0.3s ease; 
+    cursor:default;
+    }
+
+    .Hl {
+    font-style: italic;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+    cursor:default;
+}
+
+    .Hl:hover {
+    color: rgba(226, 0, 0, 0.726);
+    font-family: Verdana;
+    text-decoration: none;
+    
+}
+
+    p {
+    color: rgba(255, 255, 255, 0.8);
+    font-family:Verdana;
+}
+
+    .Intro {
+    color: black;
+    font-family:Verdana;
+    -webkit-text-stroke-color: red;
+    text-decoration:none;
+    text-align:left;
+    transition: color 0.3s ease; 
+    cursor:default;
+}
+
+    .MeImage0 {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    height: 434px;
+    width:1000px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    left: 1px;
+    }
+
+
+    .MeImage1 {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        box-shadow: 20px 10px 6px rgba(180, 1, 1, 0.548);
+        transition: transform 0.3s ease;
+        right: 75px;
+        top: 240px;
+        height: 434px;
+        width:233px;
+
+    }
+
+    .MeImage1:hover {
+        transform: scale(1.2);
+    }
+
+    p.TextSample {
+        color: black;
+    }
+
+    .button1 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Verdana;
+            text-align: center;
+            text-decoration: none;
+            background: linear-gradient(to right, rgba(27, 27, 27, 0.5), rgba(0, 0, 0, 0.5));
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .button1:hover {
+        background-color: #141414;
+        transform: scale(1.1);
+        }
+
+        .button2 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Verdana;
+            text-align: center;
+            text-decoration: none;
+            background: linear-gradient(to right, rgba(27, 27, 27, 0.5), rgba(0, 0, 0, 0.5));
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button2:hover {
+            background-color: #141414;
+        }
+
+        .button3 {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: Verdana;
+            text-align: center;
+            text-decoration: none;
+            background: linear-gradient(to right, rgba(27, 27, 27, 0.5), rgba(0, 0, 0, 0.5));
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .button3:hover {
+            background-color: #141414;
+        }
+  
+        .FunctionsContainer {
+        display: flex;
+        }
+
+        .Function1, .Function2 {
+        padding: 5px;
+        margin-right: 10px;
+        }
+
+        #myText {
+            transition: opacity 0.5s ease-in-out;
+        }
+
+
+</style>
+<body>
+    <video id="backgroundVideo" autoplay muted loop>
+        <source src="DarkBackground.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+
+
+    <div class="MainHeader">
+        <h1 id="myText" class="title">czvkxo</h1>
+        </div>
+    <div class="Content1">
+        <br>
+        <hr>
+        <h1>
+            Welcome to my portfolio!
+            <br>
+        </h1>
+        <p>12-24-2023</p>
+        <div class="MeImage0" onmouseover="changeText('white', 'white', 'white')" onmouseout="changeText('black', 'black', 'black')">
+            <h1 class="Intro"><b>Who am I?</b><br>
+            <br> <sub>czvkxo, <a class="Hl" href="https://www.roblox.com/games/4169490976/Mortem-Metallum-Alpha">game developer</a>, web engineer,</sub></h1>
+        </div>
+            <!--<p class="TextSample">Who am I?</p>-->
+            <div id="collapsible-container">
+                <div class="collapsed-buttons">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <div id="collapsible-container">
+
+            </div>
+ <!--           <img src="IMG_3202.jpeg" onmouseover="changeVideo('Test.mp4')" onmouseout="changeVideo('DarkBackground.mp4')">-->
+ <div class="MeImage1">
+    <img src="BWCZVKXO.png">
+        </div>
+    </div>
+
+
+<div class="FunctionsContainer">
+        <div class="Function1">
+            <a href="#" class="button1">Projexts ؼ</a>
+        </div>
+    
+        <div class="Function2">
+            <a href="#" class="button2">Projexts ؼ</a>
+        </div>
+        <div class="Function3">
+            <a href="#" class="button3">Projexts ؼ</a>
+        </div>
+    </div>
+
+    <!--<script>
+        function changeVideo(videoSource) {
+            var backgroundVideo = document.getElementById('backgroundVideo');
+            backgroundVideo.src = videoSource;
+            backgroundVideo.load();
+            backgroundVideo.play();
+        }
+    </script>-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var meImage0 = document.querySelector('.MeImage0');
+            var hlLink = document.querySelector('.Hl');
+            var Intro = document.querySelector('h1.Intro');
+            var TextSample = document.querySelector('p.TextSample');
+    
+            meImage0.addEventListener('mouseover', function () {
+                hlLink.style.color = 'white';
+                TextSample.style.color = 'white';
+                Intro.style.color = 'white';
+            });
+    
+            meImage0.addEventListener('mouseout', function () {
+                hlLink.style.color = 'black';
+                TextSample.style.color = 'black';
+                Intro.style.color = 'black';
+            });
+        });
+    </script>
+    
+    <script>
+var texts = ["C1VKX0", "CZV2XO", "CXVKXO"];
+        var currentIndex = 0;
+
+        function changeText() {
+            var myTextElement = document.getElementById("myText");
+            myTextElement.style.opacity = 0;
+
+            setTimeout(function () {
+                currentIndex = (currentIndex + 1) % texts.length;
+                myTextElement.textContent = texts[currentIndex];
+                myTextElement.style.opacity = 1;
+            }, 2000);
+        }
+
+        setInterval(changeText, 2);
+        </script>
+</body>
+</html>
